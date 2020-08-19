@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Page Title</title>
+<style>
+*    {
+     box-sizing: border-box;
+      }
+.m-5 {   
+     margin:5px;}
+     
+.siteTitle{
+     text-align: center;
+     background:#111;
+     padding:5px;
+     border-radius: 2px;
+      }
+.dots {
+      display:inline-block;
+      float:left;
+       }
+.comName{
+        display:inline;
+         }
+.companyName{
+         padding:5px;
+         color:white;
+         background:#41444b;
+        }
+.user{
+         display:inline-block;
+         float:right;
+     }
+
+form.example input[type=text] {
+  margin-top:19px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-top:19px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+    }
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+ .example h3{
+ width:20%;
+ display:inline-block;
+ float:left;
+ text-align:center;
+ }
+.search{ 
+ width:80%;
+ float:right;
+ }
+.lableName{
+   margin-top:1px;
+   background:#f1f1f1;
+   }
+   
+.title{
+  text-align: center;
+  display:inline;
+  color:white;
+   }
+.dot {
+  height:5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+ 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+   }
+
+li {
+float: left;
+padding:1px;
+background:#f1f1f1;
+width:20%;
+border:solid white 1px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  color:white;
+}
+
+.item{text-align:right;}
+
+.user_img
+      {display:inline-block;
+       width:10%;
+      }
+.user_img i
+      {
+      position:absolute;
+      top:0;
+      font-size:32px;
+      padding-top:40px;
+      }
+.data1
+      {display:inline-block;
+      width:70%;
+      }
+.data2
+      {display:inline-block;
+       width:10%;
+       float:right;
+      }
+.data2 h3 
+      { position:absolute;
+        top:0;
+      }
+.data2 h4 
+     {
+     position:absolute;
+     bottom:0;
+     }
+.user_data
+         {
+         position:relative;
+         border-style: solid;
+         }
+ @media only screen and (max-width: 400px) {
+  .companyName{
+    font-size:10px;
+  }
+  .example h3{ font-size:12px;}
+  form.example button{font-size:12px;
+                     margin-top:10px;}
+  form.example input[type=text] {
+  font-size:12px;
+  margin-top:10px;}
+  
+  .data2{width:15%;}
+  ul{width:100%;
+  
+  }
+  li{font-size:6px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="siteTitle" > 
+
+<div class="dots">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+
+</div>
+<h6 class="title">site Title</h6> 
+</div>
+<!--------------------------------------->
+<div class="companyName">
+<h3 class="comName">Company Name</h3>
+<div class="user">
+<i class="fa fa-user-circle m-5"></i>
+<span class="m-5">Hi,Raheeq</span>
+<i class="fa fa-bell m-5"></i>
+<i class="fa fa-ellipsis-v m-5"></i>
+</div>
+</div>
+<!--------------------------------------->
+
+<div   class ="nav">
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+</div>
+
+<!-------------------------------------->
+<div  class="lableName">
+<form class="example" action="/action_page.php">
+<h3>lable name</h3>
+<div class="search">
+<input type="text" placeholder="Search.."          name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+
+<!----------------------------------->
+
+<div class="item  m-5 ">
+<h3 >100 items</h3>
+</div>
+
+<!-----------------------------------> 
+<div class="user_data">
+<div class="user_img">
+<i class="fa fa-user-circle m-5"></i> 
+</div>
+<div class="data1" >
+<h4>label</h4>
+<p> label</p>
+<h4>label</h4>
+<p> label label label label label label label label label labe</p>
+</div>
+<div class="data2">
+<h3>lable</h3>
+<h4>lable</h4>
+</div>
+</div>
+</body>
+</html>
